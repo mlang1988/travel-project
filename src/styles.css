@@ -120,27 +120,110 @@ h5 {
   opacity: 0.7;
 }
 
+.sights-container {
+  margin-top: 100px;
+}
+
+.sights-container,
+.gallery-container h3 {
+  text-align: center;
+}
+
+.sights-container,
+.gallery-container h2 {
+  text-align: center;
+}
+
 .card-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .sagrada-familia {
   width: 150px;
 }
 
-.card-1 p {
+.card-container p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   opacity: 0.7;
 }
 
+.card-container button {
+  background-color: #462cb2;
+  color: white;
+  padding: 16px 32px;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0 auto;
+  display: block;
+}
+
+.card-1 button {
+  margin-top: 60px;
+}
+
+.card-3 button {
+  margin-top: 40px;
+}
+
 .park-guell {
-  width: 200px;
-  padding-bottom: 25px;
+  width: 150px;
+  padding-bottom: 30px;
+}
+
+.bunkers-carmel {
+  width: 150px;
+  padding-bottom: 30px;
+}
+
+.gallery-container {
+  margin-top: 100px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1200px;
+  gap: 15px;
+  margin: 0 auto;
+}
+
+.gallery-grid img {
+  width: 350px;
 }
 
 footer {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background: #272044;
+  color: white;
+  padding: 100px 170px;
+}
+
+footer h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+}
+
+footer a,
+p {
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
