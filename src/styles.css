@@ -29,14 +29,26 @@ body {
 }
 
 section {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 .grid {
   display: grid;
+  gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-footer {
   grid-template-columns: 1fr 2fr 2fr;
-  gap: 15px;
+}
+
+.img-responsive {
+  max-width: 100%;
 }
 
 .hero {
@@ -84,19 +96,35 @@ section {
   text-transform: uppercase;
 }
 
+.description {
+  margin-top: 100px;
+}
+
 .description h2 {
   font-weight: 700;
   font-size: 40px;
-  line-height: 50px;
+  line-height: 1.5;
   color: #272044;
+  margin: 0;
 }
 
-h3 {
+.description h3 {
   font-weight: 700;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
   color: #272044;
   opacity: 0.3;
+  text-transform: uppercase;
+}
+
+.description p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
 }
 
 .card-container h4 {
@@ -110,30 +138,6 @@ h5 {
   font-weight: 700;
   font-size: 13px;
   line-height: 19.5px;
-}
-
-.grid-intro {
-  display: grid;
-  max-width: 1200px;
-  grid-template-columns: 1fr 1fr;
-  margin: 0 auto;
-  margin-top: 80px;
-}
-
-.grid-intro img {
-  width: 400px;
-}
-
-.description {
-  margin-top: 25px;
-}
-
-.description p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #272044;
-  opacity: 0.7;
 }
 
 .sights-container {
@@ -224,7 +228,6 @@ footer {
     url("/images/barcelona-footer.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px;
   margin-top: 100px;
 }
 
@@ -242,7 +245,6 @@ footer a {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin-right: 20px;
 }
 
 footer a:hover {
@@ -255,10 +257,9 @@ footer p {
   font-size: 16px;
   line-height: 24px;
   opacity: 0.6;
-  margin-right: 20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   .hero {
     padding: 60px 0;
   }
@@ -273,5 +274,14 @@ footer p {
 
   .hero p {
     font-size: 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  section {
+    padding: 30px;
   }
 }
