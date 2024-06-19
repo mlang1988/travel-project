@@ -28,6 +28,10 @@ body {
   margin: 0 auto;
 }
 
+.text-center {
+  text-align: center;
+}
+
 section {
   max-width: 1200px;
   margin: 0 auto;
@@ -41,6 +45,10 @@ section {
 
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid-3-columns-footer {
@@ -100,7 +108,7 @@ section {
   margin-top: 100px;
 }
 
-.description h2 {
+main h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.5;
@@ -108,7 +116,7 @@ section {
   margin: 0;
 }
 
-.description h3 {
+main h3 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
@@ -119,7 +127,7 @@ section {
   text-transform: uppercase;
 }
 
-.description p {
+main p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -127,53 +135,23 @@ section {
   opacity: 0.7;
 }
 
-.card-container h4 {
+main h4 {
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
   color: #272044;
+  margin: 0;
 }
 
-h5 {
+main h5 {
   font-weight: 700;
   font-size: 13px;
-  line-height: 19.5px;
+  line-height: 1;
+  margin: 0;
+  color: #272044;
 }
 
-.sights-container {
-  margin-top: 100px;
-}
-
-.sights-container,
-.gallery-container h3 {
-  text-align: center;
-}
-
-.sights-container,
-.gallery-container h2 {
-  text-align: center;
-}
-
-.card-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.sagrada-familia {
-  width: 150px;
-}
-
-.card-container p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  opacity: 0.7;
-}
-
-.card-container button {
+main .btn {
   background-color: #462cb2;
   color: white;
   padding: 16px 32px;
@@ -181,26 +159,23 @@ h5 {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  margin: 0 auto;
+  text-align: center;
   display: block;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-.card-1 button {
-  margin-top: 60px;
+.card {
+  margin: 30px 0;
 }
 
-.card-3 button {
-  margin-top: 40px;
+.card-body {
+  padding: 30px;
 }
 
-.park-guell {
-  width: 150px;
-  padding-bottom: 30px;
-}
-
-.bunkers-carmel {
-  width: 150px;
-  padding-bottom: 30px;
+.card-footer {
+  padding: 0 30px 30px;
 }
 
 .gallery-container {
