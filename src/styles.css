@@ -243,6 +243,10 @@ footer p {
   opacity: 0.6;
 }
 
+.github-link {
+  display: inline;
+}
+
 @media (max-width: 960px) {
   .hero {
     padding: 60px 0;
