@@ -21,6 +21,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background: #dfd8f1;
 }
 
 .container {
@@ -119,11 +120,15 @@ section {
   margin-top: 50px;
 }
 
+main {
+  background-color: #f3f3f3;
+}
+
 main h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.5;
-  color: #272044;
+  color: #200567;
   margin: 0;
 }
 
@@ -133,7 +138,7 @@ main h3 {
   line-height: 1.5;
   margin: 0;
   letter-spacing: 5px;
-  color: #272044;
+  color: #200567;
   opacity: 0.3;
   text-transform: uppercase;
 }
@@ -150,7 +155,7 @@ main h4 {
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
-  color: #272044;
+  color: #200567;
   margin: 0;
 }
 
@@ -159,7 +164,7 @@ main h5 {
   font-size: 13px;
   line-height: 1;
   margin: 0;
-  color: #272044;
+  color: #200567;
 }
 
 main .btn {
