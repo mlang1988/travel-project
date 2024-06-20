@@ -35,7 +35,7 @@ body {
 section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .grid {
@@ -56,7 +56,13 @@ section {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 .hero {
@@ -69,6 +75,7 @@ section {
   color: white;
   padding: 200px 0;
   border-radius: 4px;
+  margin-bottom: 40px;
 }
 
 .hero h1 {
@@ -92,20 +99,24 @@ section {
   line-height: 1.5;
 }
 
-.hero button {
+.hero a {
   border-radius: 4px;
   color: #272044;
+  background: white;
   padding: 16px 32px;
+  margin-top: 32px;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.5;
-  border: none;
   letter-spacing: 3px;
   text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.description {
-  margin-top: 100px;
+.introduction {
+  margin-top: 50px;
 }
 
 main h2 {
@@ -170,6 +181,10 @@ main .btn {
   margin: 30px 0;
 }
 
+.card-header.grid {
+  gap: 0;
+}
+
 .card-body {
   padding: 30px;
 }
@@ -178,20 +193,9 @@ main .btn {
   padding: 0 30px 30px;
 }
 
-.gallery-container {
-  margin-top: 100px;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: 1200px;
-  gap: 15px;
-  margin: 0 auto;
-}
-
-.gallery-grid img {
-  width: 350px;
+.gallery.grid {
+  gap: 32px;
+  margin-top: 32px;
 }
 
 footer {
@@ -258,5 +262,17 @@ footer p {
 
   section {
     padding: 30px;
+  }
+
+  .introduction {
+    margin: 0;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
